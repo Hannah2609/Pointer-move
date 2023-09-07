@@ -1,0 +1,13 @@
+:root {
+  /* her sætter vi kun hue og light som er de eneste der er konstante */
+  --hue: 120;
+  --light: 50%;
+}
+
+body {
+  height: 100vh;
+  background-color: hsl(var(--hue) var(--sat, 100%) var(--light));
+  /* var hue og light er allerede sat, men vi sætter 100% 
+  efter kommaet i --sat, så den har en stanart indstilling hvis --sat 
+  ikke er defineret endnu */
+}
